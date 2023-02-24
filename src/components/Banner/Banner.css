@@ -1,0 +1,211 @@
+.banner {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 100px;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(255, 255, 255, 0.4); */
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.bannerWrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.schoolInfo {
+  background-color: white;
+  height: 200px;
+  width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.rowOne {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.itemName {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bolder;
+}
+
+.schoolLife {
+  background-color: #abebc6;
+}
+
+.academics {
+  background-color: #76d7c4;
+}
+
+.admission {
+  background-color: #52be80;
+}
+
+.lineOne {
+  font-size: 25px;
+}
+
+.lineTwo {
+  font-size: 18px;
+}
+
+.rowTwo {
+  text-align: center;
+  /* line-height: 100px; */
+}
+
+.tagLine {
+  font-size: 18px;
+  padding: 30px 80px;
+  color: gray;
+}
+
+.colorText {
+  color: #52be80;
+}
+
+.schoolTour {
+  cursor: pointer;
+}
+
+.aboutSchool {
+  /* padding: 0 50px; */
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+}
+
+.aboutSchoolHeading {
+  color: #52be80;
+  font-size: 34px;
+  /* padding: 50px; */
+  /* width: 400px; */
+}
+
+.aboutSchoolLeft {
+  width: 50%;
+  padding-left: 50px;
+  padding-right: 30px;
+}
+
+.aboutSchoolDetailsLeft {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+.letterHead {
+  font-size: 60px;
+  font-weight: bold;
+  color: #52be80;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.aboutSchoolRight {
+  width: 50%;
+  font-size: 18px;
+  padding-right: 50px;
+  padding-left: 30px;
+  color: white;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .banner {
+    width: 90%;
+  }
+  .schoolInfo {
+    width: 80%;
+  }
+
+  .rowOne {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .rowTwo {
+    display: none;
+  }
+
+  .itemName {
+    width: 100%;
+  }
+
+  .lineOne {
+    font-size: 18px;
+  }
+
+  .lineTwo {
+    font-size: 12px;
+  }
+
+  .aboutSchoolHeading {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .letterHead {
+    font-size: 35px;
+  }
+
+  .aboutSchool {
+    flex-direction: column;
+  }
+
+  .aboutSchoolLeft {
+    padding-left: 0px;
+    margin-bottom: 20px;
+    padding-right: 0px;
+  }
+
+  .aboutSchoolRight {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .aboutSchoolDetailsLeft,
+  .aboutSchoolDetailsRight {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .schoolInfo {
+    width: 100%;
+  }
+
+  .tagLine {
+    padding: 20px 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .schoolInfo {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1900px) {
+}

@@ -1,0 +1,142 @@
+.loader > img {
+  width: 40px;
+  height: 40px;
+}
+
+.aboutHeader {
+  position: relative;
+}
+
+.aboutHeaderImg {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.aboutUsImgDetails {
+  background-color: rgba(86, 230, 175, 0.5);
+  height: 40%;
+  width: 40%;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  /* opacity: 0.5; */
+  display: flex;
+
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.aboutUsHeading {
+  /* background-color: orangered;
+  height: 60px;
+  width: 50%; */
+  /* position: absolute;
+  top: 40%;
+  left: 10%; */
+  margin-left: 80px;
+}
+
+.aboutUsCardsWrapper {
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.aboutUsCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: orange; */
+}
+
+.aboutCardImg {
+  width: 200px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.aboutCardDetails {
+  background: rgba(86, 230, 175, 0.5);
+  width: 80%;
+  color: white;
+  position: absolute;
+  bottom: 2%;
+  left: 10%;
+  text-align: center;
+}
+
+.aboutCardDetails > span {
+  font-size: 12px;
+}
+
+.aboutCardDetails:hover {
+  background: rgba(86, 230, 175, 1);
+  transition: all ease-in-out 1s;
+  -webkit-transition: all ease-in-out 1s;
+  -moz-transition: all ease-in-out 1s;
+  -ms-transition: all ease-in-out 1s;
+  -o-transition: all ease-in-out 1s;
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .aboutUsCardsWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .aboutCardDetails {
+    width: 30%;
+    left: 35%;
+  }
+  .aboutCardDetails > span {
+    font-size: 10px;
+  }
+  .aboutCardDetails > h3 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .aboutUsImgDetails {
+    height: 45%;
+    width: 45%;
+    top: 25%;
+  }
+
+  .aboutUsHeading {
+    font-size: 18px;
+    position: absolute;
+    top: 16%;
+    left: -20%;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .aboutUsCardsWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .aboutCardDetails {
+    left: 25%;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .aboutUsCardsWrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .aboutCardDetails {
+    width: 40%;
+    left: 30%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1900px) {
+}

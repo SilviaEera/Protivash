@@ -1,0 +1,150 @@
+.schoolBlog {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 50px 0;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  /* margin: 10px 0; */
+  margin-bottom: 20px;
+}
+
+.schoolBlog > h2 {
+  margin-bottom: 30px;
+  color: #52be80;
+  font-size: 34px;
+}
+
+.schoolBlogWrapper {
+  /* opacity: 0.4; */
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* height: 200px; */
+  width: 100%;
+}
+
+.schoolBlogLeft {
+  width: 50%;
+  padding-left: 50px;
+}
+.schoolBlogRight {
+  width: 50%;
+  padding-right: 50px;
+}
+
+.imgContainer {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.imgOne {
+  width: 80%;
+  /* box-sizing: border-box; */
+  transition: all 0.3s ease-in-out;
+}
+
+.blogRightWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgOne:hover {
+  /*overflow: hidden;
+  */
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.imgTwo {
+  width: 40%;
+  transition: all 0.3s ease-in-out;
+}
+
+.imgTwo:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.blogImgDetails {
+  /* margin: 20px 0; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogImgDetails > p {
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.blogImgDetails > h3 {
+  font-size: 18px;
+  /* color: #52be80; */
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .schoolBlog {
+    width: 90%;
+  }
+  .schoolBlogWrapper {
+    flex-direction: column;
+  }
+
+  .schoolBlogLeft {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .schoolBlogRight {
+    width: 100%;
+    padding-right: 0px;
+  }
+
+  .imgTwo {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .schoolBlogWrapper {
+    flex-direction: column;
+  }
+
+  .schoolBlogLeft,
+  .schoolBlogRight {
+    width: 100%;
+    padding: 0;
+  }
+
+  .imgContainer > img {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1900px) {
+}

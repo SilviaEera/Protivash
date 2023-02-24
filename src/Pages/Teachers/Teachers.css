@@ -1,0 +1,83 @@
+.teacherWrapper {
+  padding: 40px;
+  /* margin-top: 50px; */
+  /* margin-bottom: 50px; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.teacherCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.cardImg > img {
+  width: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.cardDetails {
+  color: grey;
+  font-weight: 500;
+}
+
+.cardDetails .teacherCardName {
+  font-size: 18px;
+}
+
+.cardDetails .teacherCardSub {
+  font-size: 12px;
+}
+
+.cardDetails .teacherCardNumber {
+  font-size: 12px;
+}
+
+.loader > img {
+  width: 64px;
+  height: 64px;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .teacherWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .teacherWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .teacherWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1900px) {
+}
